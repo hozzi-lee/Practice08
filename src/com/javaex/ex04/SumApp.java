@@ -38,8 +38,8 @@ public class SumApp {
 		}
 		// java책 + 구글검색...
 		/*
-		for (String lang : numArray) {
-			int num = Integer.parseInt(lang);
+		for (String lang : numArray) { // 변수(lang)에는 배열(strArray)의 각 요소(String형)가 대입됨
+			int num = Integer.parseInt(lang); // 문자열에 있는 숫자를 int형으로 변환
 			sum += num;
 			System.out.println(lang);
 		}
