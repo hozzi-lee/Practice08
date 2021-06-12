@@ -36,6 +36,14 @@ public class SumApp {
 			sum += num;
 			System.out.println(num);
 		}
+		// java책 + 구글검색...
+		/*
+		for (String lang : numArray) {
+			int num = Integer.parseInt(lang);
+			sum += num;
+			System.out.println(lang);
+		}
+		 */
 
 		System.out.println("합:" + sum);
 
