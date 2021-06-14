@@ -10,13 +10,6 @@ public class CalcApp {
 		String numLine = scan.nextLine();
 		String[] numArray = numLine.split(" ");
 
-		/* 출력 확인
-		for (int i = 0; i < numArray.length; i++) {
-			System.out.println(numArray[i]);
-		}
-		 */
-
-		int result;
 		int a = Integer.parseInt(numArray[0].substring(0));
 		int b = Integer.parseInt(numArray[2].substring(0));
 
@@ -28,36 +21,27 @@ public class CalcApp {
 		};
 
 		for (int i = 0; i < calc.length; i++) {
-
+			//			calc[i].setValue(a, b);
+			//			continue;
 
 			if ( numArray[1].equals("+") ) {
 				System.out.println(calc[0].calculate());
-				//					result = a + b;
-				//					System.out.println(result);
+				break;
 			}else if ( numArray[1].equals("-") ) {
 				System.out.println(calc[1].calculate());
-//				if ( a >= b ) {
-//					result = a - b;
-//				} else {
-//					result = b - a;
-//				}
-//				System.out.println(result);
+				break;
 			}else if ( numArray[1].equals("*") ) {
 				System.out.println(calc[2].calculate());
-//				result = a * b;
-//				System.out.println(result);
+				break;
 			}else if ( numArray[1].equals("/") ) {
 				System.out.println(calc[3].calculate());
-//				if ( a >= b ) {
-//					result = a / b;
-//				} else {
-//					result = b / a ;
-//				}
-//				System.out.println(result);
+				break;
 			}else if ( numLine.equals("/q") ) {
 				System.out.println("종료합니다.");
+				break;
 			}else {
 				System.out.println("알 수 없는 연산입니다.");
+				break;
 			}
 
 		}
