@@ -101,7 +101,7 @@ public class CalcApp {
 			}
 			break;
 
-		}scan.close();
+		}scan.close(); 
 
 	}
 }
